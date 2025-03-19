@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: hsl(86, 63%, 39%);
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20vh 10px;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.project {
+  position: relative;
+  width: 270px;
+  height: 400px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.label {
+  width: 100%;
+  height: 14%;
+  bottom: 40%;
+  position: absolute;
+  background-color: #814C2D;
+  z-index: 2;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 3%;
+  color: hsl(0, 0%, 95%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.pot {
+  position: absolute;
+  padding: 10%;
+  height: 40%;
+  width: 70%;
+  bottom: 0%;
+  left: 5%;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  background-color: brown;
+  background: linear-gradient(180deg, hsl(22, 44%, 21%) 15%, #814C2D 18%);
+  text-align: center;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.pot img {
+  width: 54%;
+  position: absolute;
+  border-radius: 5%;
+  border: 2px solid black;
+  bottom: 5%;
+  left: 22%;
+}
+
+.pot-shadow {
+  position: absolute;
+  width: 75%;
+  /* Make the shadow larger */
+  height: 16%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  /* Make it a circle */
+  bottom: -6%;
+  left: 14%
+}
+
+.plant1 {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+}
+
+.plant1 div {
+  width: 50%;
+  height: 100%;
+  background-color: green;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+}
+
+.plant1 div:nth-child(1) {
+  top: 20%;
+  left: 0%;
+  transform: rotate(-40deg);
+}
+
+.plant1 div:nth-child(2) {
+  top: 0;
+  left: 25%;
+}
+
+.plant1 div:nth-child(3) {
+  top: 20%;
+  left: 50%;
+  transform: rotate(40deg);
+}
+
+.sky {
+  width: 100vw;
+  height: 40vh;
+  top: 0;
+  background-color: hsl(201, 90%, 67%);
+  position: absolute;
+  z-index: -1;
+}
+
+.cloud {
+  height: 70px;
+  width: 200px;
+  border-radius: 100px;
+  border-bottom: 5px solid gray;
+
+  position: relative;
+  margin: auto;
+  top: 15vh;
+  background-color: white;
+  animation: animateCloud 100s linear infinite;
+  z-index: 1;
+
+}
+
+.cloud::before,
+.cloud::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+}
+
+.cloud::before {
+  border-radius: 50%;
+  top: -21px;
+  left: 28px;
+  height: 80px;
+  width: 80px;
+}
+
+.cloud::after {
+  border-radius: 50%;
+  top: -50px;
+  left: 69px;
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes animateCloud {
+  0% {
+    margin-left: -25%;
+  }
+
+  100% {
+    margin-left: 100%;
+  }
+}
+
+.sun {
+  height: 25vh;
+  width: 25vh;
+  top: 12px;
+  right: 0;
+  border-radius: 50%;
+  background-color: hsl(54, 100%, 50%);
+  position: absolute;
+  z-index: 0;
+}
