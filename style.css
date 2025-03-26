@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
 .navbar-wrapper {
     position: fixed;
     width: 100vw;
@@ -11,8 +16,8 @@
     align-items: center;
     padding: 20px;
     background-color: #252525;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,37,37,0.7606442235097164) 100%); 
     color: #ed5858;
-  /*         box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1); */
   }
   
   .logo {
@@ -34,5 +39,39 @@
   
   .nav-links a:hover {
     color: white;
+  }
+  
+  .about-title {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .person-container{
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .heading {
+    background-color: #e6e6e6;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 400px;
+    width: 100vw;
+    clip-path: polygon(100% 0, 100% 60%, 90% 80%, 10% 80%, 0 100%, 0 0);
+  }
+
+  .red-atagi-pic {
+    border-radius: 50% 0 50% 0;
+    width: 250px;
+    padding-left: 20px;
+  }
+
+  .reds-bio {
+    width: 60vw;
+    margin: auto;
+    font-size: 1.2em;
   }
   

@@ -1,9 +1,6 @@
 body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
   background-color: hsl(86, 63%, 39%);
 }
-
 .projects-container {
   display: flex;
   flex-wrap: wrap;
