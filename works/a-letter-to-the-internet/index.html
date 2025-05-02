@@ -2,43 +2,26 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A Letter to the Internet - Red Atagi</title>
-    <style>
-      body {
-        margin: 0;
-      }
-      
-      * {
-        box-sizing: border-box;
-      }
-      
-      .main-grid {
-        display: grid;
-        grid-template-columns: 60vw 30vw;
-        align-items: start;
-        gap: 5vw;
-        padding: 20px;
-      }
-      
-      .work-imgs {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 20px;
-      }
-      
-      img {
-        width: 100%;
-      }
-
-      video {
-        width: 100%;
-      }
-    
-    </style>
+    <meta name="author" content="Red Atagi">
+    <meta name="description" content="A list of Red Atagi's projects">
+    <link rel="stylesheet" href="../works-style.css">
+    <link rel="stylesheet" href="../../style.css">
   </head>
   <body>
+    <!-- navbar -->
+    <div class="navbar-wrapper">
+      <nav class="navbar">
+        <div class="logo">Red Atagi</div>
+        <div class="nav-links">
+          <a href="../../">About</a>
+          <a href="../">Works</a>
+          <a href="../../contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+
     <div class="main-grid">
       <div class="work-imgs">
         <video controls>
@@ -57,5 +40,21 @@
         </p>
       </div>
     </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/red-atagi/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/Red-Atagi" target="_blank">GitHub</a></li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="footer-links">
+          <li><a href="../../contact">Contact</a></li>
+          <li><a href="../../">About</a></li>
+          <li><a href="../../works">Works</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

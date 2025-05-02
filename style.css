@@ -16,13 +16,13 @@ body {
     align-items: center;
     padding: 20px;
     background-color: #252525;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,37,37,0.7606442235097164) 100%); 
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,37,37,0.76) 100%); 
     color: #f22b2b;
   }
   
   .logo {
     font-weight: bold;
-    font-size: 1.2em
+    font-size: 1.75em
   }
   
   .nav-links {
@@ -73,5 +73,50 @@ body {
     width: 60vw;
     margin: auto;
     font-size: 1.2em;
+  }
+
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+
+  .footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: inline-block;
+  }
+
+  .footer-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: #fff;
+  }
+
+  .divider {
+    display: inline-block;
+    height: 16px;
+    width: 1px;
+    background-color: #555;
+    margin: 0 20px;
+    vertical-align: middle;
   }
   
